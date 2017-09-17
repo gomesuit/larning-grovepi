@@ -25,7 +25,7 @@ while True:
         grovepi.fourDigit_init(display)
         grovepi.fourDigit_number(display,int(temp * 100),0)
         #print(temp.__class__)
-        print("temp =", temp)
+        #print("temp =", temp)
         time.sleep(.5)
 
     except KeyboardInterrupt:
