@@ -4,6 +4,9 @@
 - https://www.dexterindustries.com/GrovePi/get-started-with-the-grovepi/
 
 ```
-pipenv install
-pipenv shell
+sudo pip install supervisor
+supervisord -c supervisord.conf
+supervisorctl -c supervisord.conf status
+supervisorctl -c supervisord.conf stop temerature 
+supervisorctl -c supervisord.conf start temerature 
 ```
