@@ -17,10 +17,12 @@ time.sleep(.5)
 
 while True:
     try:
-        #print ("Test 9) Monitor analog pin")
+        grovepi.fourDigit_brightness(display,2)
+
         #seconds = 10
         #grovepi.fourDigit_monitor(display,sensor,seconds)
         temp = round(grovepi.temp(sensor,'1.2'), 2)
+        grovepi.fourDigit_init(display)
         grovepi.fourDigit_number(display,int(temp * 100),0)
         #print(temp.__class__)
         print("temp =", temp)
